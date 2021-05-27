@@ -1,0 +1,39 @@
+const int redLight = D0;
+const int amberLight = D7;
+const int greenLight = D2;
+
+
+void setup() {
+  pinMode(redLight, OUTPUT);
+  pinMode(amberLight, OUTPUT);
+  pinMode(greenLight, OUTPUT);
+
+  digitalWrite(redLight, LOW);
+  digitalWrite(amberLight, LOW);
+  digitalWrite(greenLight, LOW);
+}
+
+void loop() {
+  
+  digitalWrite(redLight, HIGH);
+  digitalWrite(amberLight, LOW);
+  digitalWrite(greenLight, LOW);
+  delay(3000);
+  
+  digitalWrite(redLight, LOW);
+  digitalWrite(greenLight, LOW);
+  digitalWrite(amberLight, HIGH);
+  delay(3000);
+
+  digitalWrite(redLight, LOW);
+  digitalWrite(amberLight, LOW);
+  digitalWrite(greenLight, HIGH);
+  delay(3000);
+
+   digitalWrite(redLight, LOW);
+  digitalWrite(greenLight, LOW);
+  digitalWrite(amberLight, HIGH);
+  delay(3000);
+
+
+}
